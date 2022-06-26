@@ -1,5 +1,4 @@
-#FizzBuzz
-
+#FizzBuzz_2
 def fizz_buzz(number):
     answer = ''
     if number % 3 == 0 and number % 5 == 0:
@@ -15,6 +14,10 @@ def fizz_buzz(number):
 def main():
     for x in range(1,101):
         answer = fizz_buzz(x)
-        print(answer)
+        y = str(x)
+        if len(str(x)) > 2 :
+            print(x,":   ",answer,sep="")
+        else:
+            print(x,":    ",answer,sep="")
 
 main()
