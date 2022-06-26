@@ -1,20 +1,22 @@
-#FizzBuzz
-
+#FizzBuzz_2
 def fizz_buzz(number):
-    answer = ''
+    response = ''
     if number % 3 == 0 and number % 5 == 0:
-        answer = 'FizzBuzz'
+        response = 'FizzBuzz'
     elif number % 3 == 0:
-        answer = 'Fizz'
+        response = 'Fizz'
     elif number % 5 == 0:
-        answer = 'Buzz'
+        response = 'Buzz'
     else:
-        answer = number
-    return answer
+        response = number
+    return response
 
 def main():
     for x in range(1,101):
-        answer = fizz_buzz(x)
-        print(answer)
+        response = fizz_buzz(x)
+        if len(str(x)) > 2 :
+            print(x,":   ",response,sep="")
+        else:
+            print(x,":    ",response,sep="")
 
 main()
